@@ -1,0 +1,2 @@
+* Make the key configurable
+* Don't use PyQt, but the official bindings?
