@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import (
     QApplication,
     QMainWindow,
 )
-from PyQt5.QtGui import QKeySequence
+from PyQt5.QtGui import QKeySequence, QCursor
 from PyQt5.QtCore import Qt
 
 
@@ -13,6 +13,7 @@ class Window(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowOpacity(0)
+        self.move(QCursor.pos())
         self.showFullScreen()
 
     def keyReleaseEvent(self, event):
