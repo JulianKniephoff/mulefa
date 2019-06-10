@@ -1,5 +1,5 @@
-`wheel-catcher`
-===============
+`mulefa`
+========
 
 Just a small Python script,
 displaying a transparent full screen window.
