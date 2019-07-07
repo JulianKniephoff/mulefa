@@ -17,7 +17,7 @@ class Window(QMainWindow):
         self.showFullScreen()
 
     def keyReleaseEvent(self, event):
-        if event.key() == Qt.Key_Meta:
+        if event.key() == Qt.Key_Super_L:
             self.close()
 
 
