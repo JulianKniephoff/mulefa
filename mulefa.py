@@ -14,11 +14,15 @@ class Window(QMainWindow):
         super().__init__()
         self.setWindowOpacity(0)
         self.move(QCursor.pos())
+        self.setFocusPolicy(Qt.StrongFocus)
         self.showFullScreen()
 
     def keyReleaseEvent(self, event):
         if event.key() == Qt.Key_Super_L:
             self.close()
+
+    def focusOutEvent(self, event):
+        self.close()
 
 
 if __name__ == '__main__':
